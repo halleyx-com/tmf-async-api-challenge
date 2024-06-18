@@ -18,6 +18,8 @@ const productCategoryModel = new mongoose.Schema(
     pricingType: { type: Array },
     identifier: { type: String },
     isSellabe: { type: Boolean },
+    '@type':{type:String,default:"ProductCategory"},
+    topicRef:{type:Array},
   },
   {
     timestamps: { createdAt: "createdAt", lastUpdate: "updatedAt" },

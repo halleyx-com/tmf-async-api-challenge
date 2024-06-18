@@ -31,6 +31,8 @@ const offeringpriceModel = mongoose.Schema(
     pricingLogicAlgorithm: { type: Object },
     tax: { type: Array },
     lastUpdate: { type: Date, default: new Date().toISOString() },
+    '@type':{type:String,default:"ProductOfferingPrice"},
+    topicRef:{type:Array},
   },
   {
     timestamps: { createdAt: "createdAt", lastUpdate: "updatedAt" },

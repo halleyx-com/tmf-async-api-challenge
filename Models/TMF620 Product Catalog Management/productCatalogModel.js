@@ -14,6 +14,8 @@ const productCatalogSchema = mongoose.Schema(
     validFor: { type: Object },
     category: { type: Array },
     relatedParty: { type: Array },
+    '@type':{type:String,default:"ProductCatalog"},
+    topicRef:{type:Array},
   },
   {
     timestamps: { createdAt: "createdAt", lastUpdate: "updatedAt" },

@@ -30,6 +30,8 @@ const productSpecModel = mongoose.Schema(
     resourceSpecification: { type: Array },
     attachment: { type: Array },
     serviceResourceMapping: { type: Object },
+    '@type':{type:String,default:"ProductSpecification"},
+    topicRef:{type:Array},
     constraint: {
       type: Array,
       default: [],

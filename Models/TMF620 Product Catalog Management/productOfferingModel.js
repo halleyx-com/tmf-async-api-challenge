@@ -49,6 +49,7 @@ const productOfferModel = mongoose.Schema(
       type: Array,
       default: [],
     },
+    topicRef:{type:Array},
     unitOfMeasure:{type:String},
     "@type": { type: String, default: "ProductOffering" },
   },
